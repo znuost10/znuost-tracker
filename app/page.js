@@ -21,12 +21,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 flex items-center justify-center p-8">
-      <div className="max-w-md w-full">
-        <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold text-white mb-2">znuost</h1>
-          <p className="text-gray-300">Link Tracking Platform</p>
-        </div>
-        
+      <div className="max-w-md w-full"> 
         <div className="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700">
           <h2 className="text-2xl font-bold text-white mb-6">Sign In</h2>
           
