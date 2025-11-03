@@ -20,34 +20,27 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 flex items-center justify-center p-8">
+    <div className="min-h-screen bg-[#181A18] flex items-center justify-center p-8">
       <div className="max-w-md w-full"> 
-        <div className="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700">
-          <h2 className="text-2xl font-bold text-white mb-6">Sign In</h2>
+      <div className="w-full">
           
           <form onSubmit={handleSignIn} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-2">
-                Username
-              </label>
               <input
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-transparent border-0 border-b-2 border-gray-600 text-[#E8E8E8] px-0 py-3 focus:outline-none focus:border-blue-500 transition-colors placeholder-gray-500"
                 placeholder="Enter username"
               />
             </div>
             
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-2">
-                Password
-              </label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-transparent border-0 border-b-2 border-gray-600 text-[#E8E8E8] px-0 py-3 focus:outline-none focus:border-blue-500 transition-colors placeholder-gray-500"
                 placeholder="Enter password"
               />
             </div>
@@ -58,7 +51,7 @@ export default function Home() {
             
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all"
+              className="w-full bg-transparent border-2 border-blue-600 hover:border-blue-500 text-[#E8E8E8] font-bold py-3 rounded-lg transition-all mt-6"
             >
               Sign In
             </button>
